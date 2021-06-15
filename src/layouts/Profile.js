@@ -36,8 +36,9 @@ function Profile() {
             <center>
              { data.more.previous != null && <Button color='secondary' variant='contained'><Link to={`/profile/${data.more.previous}`}>Previous </Link></Button>}
             &nbsp;&nbsp;&nbsp;&nbsp;{ data.more.next != null && <Button color='primary' variant='contained'><Link to={`/profile/${data.more.next}`}>Next </Link></Button>}
-            </center>
-
+            </center><br></br>
+         <center>   { data.more.previous != null && <Button color='outline-secondary' variant='contained'><Link to={`/home/`}>Back</Link></Button>}
+         </center>
 
         </div>
     )
